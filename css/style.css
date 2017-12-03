@@ -1,7 +1,7 @@
         body{
             margin:0px;
             padding:0px;
-            background: url(beijing.jpg);
+            
         }
         .header{
         width: 100%;
@@ -55,7 +55,6 @@
             height: 200px;
             padding: 10px;
             border: 1px solid #dddddd;
-            
             margin-left: 50px;
             margin-right: 50px;
             margin-top: 50px;
@@ -64,11 +63,12 @@
             -webkit-transition: padding 0.5s,height 0.5s; /* Safari and Chrome */
             -o-transition:  padding 1s,height 1s; /* Opera */
             background: url(bg.jpg);
+            box-shadow:5px 5px 20px #ccbbff;
         }
         .btn:hover{
             padding: 0px;
             height: 220px;
-            box-shadow:10px 10px 10px #000;
+            box-shadow:5px 5px 20px #666666;
         }
         span{
             font-family: "Times New Roman", Times, serif; 
