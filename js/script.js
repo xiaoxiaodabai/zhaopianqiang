@@ -3,9 +3,11 @@ $(document).ready(function(){
             $('#picture_list').mousewheel(function(event, delta) {
                 this.scrollLeft -= (delta * 60);
                 event.preventDefault();
-      
             })
             $('img').fadeIn(2000).slideDown();
+            $("#left").animate({width:'20%'});
+            $(".class_name").animate({"margin-top":'30px'},1000);
+            $('li').fadeIn(2000);
             $('img').hover(function(){
                 $(this).next('span').css({visibility: "visible"});
             })
@@ -76,4 +78,13 @@ $(document).ready(function(){
                     }
                 }
             })
+            $("li:nth-child(1)").click(function(){
+            $("body").scrollTop(0);
+                })
+            $("li:nth-child(2)").click(function(){
+            $("body").scrollTop(700);
+                })
+            $("li:nth-child(3)").click(function(){
+            $("body").scrollTop(1300);
+                })
 })
