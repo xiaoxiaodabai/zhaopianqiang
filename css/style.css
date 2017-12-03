@@ -1,6 +1,8 @@
         body{
-            margin:0px;
-            padding:0px;
+            padding: 0px;
+            margin: 0px;
+            overflow: scroll;
+            overflow-x: hidden;
         }
         .header{
         width: 100%;
@@ -28,6 +30,7 @@
             border-radius: 40px;
             background-color: #dddddd;
         }
+    
         .picture{
             
             display: flex;
@@ -46,7 +49,9 @@
             flex-direction: row;
             flex-wrap: nowrap;
         }
-
+        #picture_list div:nth-child(odd) img{
+            margin-top: 0px;
+    }
         .btn{
             display: none;
             cursor: pointer;
@@ -61,13 +66,14 @@
             -moz-transition: padding 1s,height 1s; /* Firefox 4 */
             -webkit-transition: padding 0.5s,height 0.5s; /* Safari and Chrome */
             -o-transition:  padding 1s,height 1s; /* Opera */
-            background: url(bg.jpg);
+            
             box-shadow:5px 5px 20px #ccbbff;
         }
         .btn:hover{
             padding: 0px;
             height: 220px;
             box-shadow:5px 5px 20px #666666;
+            border: none;
         }
         span{
             font-family: "Times New Roman", Times, serif; 
@@ -75,15 +81,13 @@
             float: left;
             padding: 0px;
             margin: 0px;
-            width: 60%;
             margin-left: 50px;
             padding-top: 20px;
-            
-            color: #000000;
+            color: #666666;
             font-size: 20px;
             line-height: 40px;
-            font-weight: bolder;
-            background-size: 200px 200px;
+
+            /*text-shadow: 3px 3px 0px #dddddd, 8px 8px 0px rgba(255,255,255,0.1);*/
         }
         .black_over{
             display: none;
