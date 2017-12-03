@@ -155,7 +155,7 @@
         color: #ffffff;
         width: 200px;
         padding-left: 60px;
-        height: 300px;
+        height: auto;
     }
     .class_name{
         float: right;
@@ -178,8 +178,6 @@
         width: 40px;
         font-size: 0.6em;
         color: #888888;
-        background: url(img/members.png) no-repeat left;
-        background-size: 25px 25px;
     }
     #left{
         
