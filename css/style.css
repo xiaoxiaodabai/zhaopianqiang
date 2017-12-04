@@ -65,6 +65,8 @@
             justify-content: space-between;
             flex-direction: row;
             flex-wrap: nowrap;
+            padding-top: 30px;
+            
         }
         #picture_list div:nth-child(odd) img{
             margin-top: 0px;
@@ -83,7 +85,7 @@
             -moz-transition: padding 1s,height 1s; /* Firefox 4 */
             -webkit-transition: padding 0.5s,height 0.5s; /* Safari and Chrome */
             -o-transition:  padding 1s,height 1s; /* Opera */
-            
+            background-color: #ffffff;
             box-shadow:5px 5px 20px #ccbbff;
         }
         .btn:hover{
